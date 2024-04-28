@@ -17,7 +17,10 @@ oh-my-posh
 - Puis la commande : oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\jandedobbeleer.omp.json" | Invoke-Expression
 - Sur le site, catégorie Theme (commande powershell Get-PoshThemes) et chercher un thème sympa
 - ctrl+clic sur le theme qui nous intéresse
-- Tout en bas de la console (il vaut mieux avoir une version récente du powershell pour s'éviter une erreur)
+- Tout en bas de la console (il vaut mieux avoir une version récente du powershell pour s'éviter une erreur, $PSVersionTable pour connaitre notre version actuelle)
+- POUR METTRE A JOUR LE POWERSHELL SI BESOIN (si version 5.1 sur Win11 par exemple...) -> winget search Microsoft.PowerShell -> winget install --id Microsoft.Powershell --source winget
+  !!! Le nouveau powershell peux exister en parallèle du premier, il faut donc s'assurer d'utiliser le bon avant de passer à la suite !!!
+
 To change your theme, adjust the init script in C:\Users\USERNAME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1.
 Example:
 oh-my-posh init pwsh --config 'C:\Users\USERNAME\AppData\Local\Programs\oh-my-posh\themes\THEME_NAME_FROM_THE_FOLDER_INDICATED.omp.json' | Invoke-Expression
